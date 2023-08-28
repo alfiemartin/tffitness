@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "max-len": [2, { "code": 120 }],
+    "react/no-unescaped-entities": 0 
+  }
 }
