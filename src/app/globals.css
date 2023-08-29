@@ -31,4 +31,18 @@
     animation: gradient 5s ease infinite;
     height: 100vh;
   }
+
+  .youtube-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+  }
+
+  .youtube-container > iframe {
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+  }
 }

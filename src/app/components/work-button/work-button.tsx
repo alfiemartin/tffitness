@@ -7,10 +7,10 @@ const WorkButton = () => {
   const [showConfetti, setShowConfetti] = useState(false);
 
   return (
-    <motion.button
+    <button
       onClick={() => setShowConfetti(true)}
-      className="bg-red-500 outline-red-500 
-      transition-all outline-0 outline-offset-4 hover:!outline-2 focus:!outline-2 
+      className="bg-red-500 outline-red-500 active:bg-red-600
+      transition-all duration-75 outline-0 outline-offset-4 hover:!outline-2 focus:!outline-2 
       text-gray-200 font-bold rounded-sm p-4 whitespace-nowrap mt-auto relative"
     >
       Apply to work with me
@@ -24,7 +24,7 @@ const WorkButton = () => {
           options={{ animationData: confetti, autoplay: false, loop: false }}
         />
       </div>
-    </motion.button>
+    </button>
   );
 };
 
